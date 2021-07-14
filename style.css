@@ -1,0 +1,267 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(8, 93, 66, 1) 35%, rgb(6, 63, 58) 52%, rgba(7, 50, 64, 1) 59%, rgba(47, 50, 99, 1) 66%, rgb(8, 51, 59) 100%);
+    ;
+    text-align: center;
+    color: beige;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    font-size: 3em;
+    padding-bottom: 1vh;
+}
+
+#cuerpo {
+    background-color: oldlace;
+    color: black;
+    margin-top: 3vh;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+#cajaformulario {
+    padding: 20px;
+    border: 1px solid #999999;
+}
+
+div #cajadatos {
+    width: 400px;
+    padding: 20px;
+    border: 1px solid #999999;
+    text-align: center;
+}
+
+#clave,
+#texto {
+    width: 150px;
+}
+
+#panel,
+#flip {
+    padding: 5px;
+    font-size: 18px;
+    text-align: center;
+    color: white;
+    border-radius: 3px;
+}
+
+#panel {
+    padding: 50px;
+    display: none;
+}
+
+img {
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+
+#rule {
+    background: #98bf21;
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    margin-left: 40px;
+}
+
+
+/*......................................................*/
+
+main {
+    background-image: url(/images/fondo.jpg);
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+
+/* Contenedor principal */
+
+main {
+    width: 900px;
+    height: 80vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main>* {
+    order: 999;
+}
+
+.lateral {
+    background-color: rgba(0, 0, 0, .4);
+    flex-basis: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.lateral>img {
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
+.lateral a {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    color: white;
+    margin: 10px 0;
+}
+
+.lateral a:first-of-type {
+    margin-top: auto;
+}
+
+
+/* Contenido */
+
+.contenido {
+    background-color: rgba(255, 255, 255, .1);
+    flex-basis: 70%;
+    padding: 20px;
+}
+
+.contenido h1 {
+    margin-top: 0;
+    font-size: 3em;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 30px;
+    color: rgb(216, 213, 213);
+}
+
+.contenido ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.contenido ul li {
+    flex-basis: 30%;
+    height: 200px;
+    background-position: center center;
+    background-size: cover;
+}
+
+.contenido ul li:first-of-type {
+    background-image: url(../images/cat1.jpg);
+}
+
+.contenido ul li:nth-child(2) {
+    background-image: url(../images/cat2.jpg);
+}
+
+.contenido ul li:last-of-type {
+    background-image: url(../images/cat3.jpg);
+}
+
+
+/* Respond */
+
+@media (max-width: 705px) {
+    body {
+        align-items: flex-start;
+    }
+    main {
+        margin: 20px;
+    }
+    .lateral,
+    .contenido {
+        flex-basis: 100%;
+    }
+    .contenido {
+        order: 1;
+    }
+    .lateral {
+        order: 2;
+    }
+}
+
+
+/* Util */
+
+.dev {
+    border: 1px solid red;
+}
+
+
+/*lllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllll*/
+
+.container h2 {
+    margin-bottom: 1rem;
+    font-size: 2.3rem;
+}
+
+.formulario-datos {
+    display: block;
+    width: 50%;
+    margin: 1rem auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario-datos input {
+    margin: 1rem 0rem;
+    line-height: 3rem;
+    background: none;
+    outline: 0;
+    border: 0;
+    color: oldlace;
+}
+
+.formulario-datos input:active {
+    border-bottom: 1px solid dodgerblue;
+}
+
+.formulario-datos input:focus {
+    border-bottom: 1px solid dodgerblue;
+}
+
+.formulario-datos button {
+    margin: 1rem 0rem;
+    background-color: dodgerblue;
+    border: 0;
+    outline: 0;
+    height: 3rem;
+    border-radius: 5px;
+    color: oldlace;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.listado-tareas {
+    display: flex;
+    flex-direction: column;
+}
+
+.tarea {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 4rem;
+}
+
+.icono {
+    color: tomato;
+    cursor: pointer;
+}
