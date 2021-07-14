@@ -159,12 +159,8 @@ main>* {
     height: 200px;
     background-position: center center;
     background-size: cover;
-
+    margin-bottom: 10vh;
 }
-#usuarios{
-    margin-top: 5vh;
-}
-
 
 /* .contenido ul li:first-of-type {
     background-image: url(../images/cat1.jpg);
